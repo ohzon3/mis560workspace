@@ -10,10 +10,19 @@
     	<Style x:Key="defaultStyle" TargetType="Grid">
     		<Setter Property="VerticalAlignment" Value="Center"/>
     		<Setter Property="HorizontalAlignment" Value="Center"/>
-    		<Setter Property="Background" Value="#FFFB1E1E"/>
-    		<Setter Property="Visibility" Value="Visible"/>
+            <Setter Property="Visibility" Value="Visible"/>
     		<Setter Property="Opacity" Value="1"/>
     	</Style>
+
+        <Style
+            TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontFamily" Value="Comic Sans MS" />
+            <Setter Property="Foreground" Value ="Blue" />
+        </Style>
+
+        <SolidColorBrush x:Key="ApplicationScopeResource" Color="Red"></SolidColorBrush>
+
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>

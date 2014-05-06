@@ -20,7 +20,9 @@ namespace Assignment1
         public MainPage()
         {
             InitializeComponent();
-            
+
+            messageOutput.Text = "";
+
             textBlock1.MouseLeftButtonUp += new MouseButtonEventHandler(textBlock1_MouseLeftButtonUp);
             textBlock2.MouseLeftButtonUp += new MouseButtonEventHandler(textBlock2_MouseLeftButtonUp);
             textBlock3.MouseLeftButtonUp += new MouseButtonEventHandler(textBlock3_MouseLeftButtonUp);

@@ -37,12 +37,12 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="1" Grid.Row="1" Height="111" HorizontalAlignment="Center" Name="textBlock2" Text="TextBlock" VerticalAlignment="Center" Width="152" Tap="textBlock2_Tap" />
-            <TextBlock Grid.Column="2" Grid.Row="2" Height="105" HorizontalAlignment="Center" Name="textBlock3" Text="TextBlock" VerticalAlignment="Center" Width="152" Tap="textBlock3_Tap" />
+            <TextBlock Grid.Column="1" Grid.Row="1" Height="111" HorizontalAlignment="Center" Name="textBlock2" Text="TextBlock" VerticalAlignment="Center" Width="152" />
+            <TextBlock Grid.Column="2" Grid.Row="2" Height="105" HorizontalAlignment="Center" Name="textBlock3" Text="TextBlock" VerticalAlignment="Center" Width="152" />
             <TextBlock Height="105" HorizontalAlignment="Center" Margin="6,6,0,0" Name="textBlock1" Text="TextBlock" VerticalAlignment="Center" Width="146" />
 
         </Grid>
-        <TextBlock Grid.Row="1" HorizontalAlignment="Left" Margin="12,329,0,232" Name="messageOutput" Text="TextBlock" Width="456" />
+        <TextBlock Grid.Row="1" HorizontalAlignment="Left" Margin="12,329,0,232" Name="messageOutput" Text="TextBlock" Width="456" Foreground="Red" />
         <Image Height="Auto" HorizontalAlignment="Left" Margin="12,408,0,0" Name="linkRMU" Stretch="Fill" VerticalAlignment="Top" Width="456" Grid.Row="1" Source="/Assignment1;component/clipart-bicycle.png" />
     </Grid>
  
