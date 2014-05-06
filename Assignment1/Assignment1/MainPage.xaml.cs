@@ -20,7 +20,7 @@ namespace Assignment1
         public MainPage()
         {
             InitializeComponent();
-
+            
             textBlock1.MouseLeftButtonUp += new MouseButtonEventHandler(textBlock1_MouseLeftButtonUp);
             textBlock2.MouseLeftButtonUp += new MouseButtonEventHandler(textBlock2_MouseLeftButtonUp);
             textBlock3.MouseLeftButtonUp += new MouseButtonEventHandler(textBlock3_MouseLeftButtonUp);
@@ -34,8 +34,6 @@ namespace Assignment1
                task.Show();
         }
  
-        
-
         void textBlock1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             messageOutput.Text = "You have clicked " + textBlock1.Name;
