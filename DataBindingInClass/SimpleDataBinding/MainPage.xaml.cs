@@ -23,8 +23,8 @@ namespace SimpleDataBinding
             this.DataContext = this;
         }
 
-        private string _MyString = String.Empty;
-        //private string _MyString = "To show how binding is initialy set";
+        //private string _MyString = String.Empty;
+        private string _MyString = "To show how binding is initialy set";
 
         public string MyString
         {
