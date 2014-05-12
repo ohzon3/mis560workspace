@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1SimpleDataBinding", "SimpleDataBinding\1SimpleDataBinding.csproj", "{3155BF52-96EC-4FD7-9826-3C29C06DCC46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2ListBindingAndComplexBinding", "ListBindingAndComplexBinding\2ListBindingAndComplexBinding.csproj", "{C1693F53-5AB2-42A9-9439-E8118BC4C97F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3TemplatingAndBinding", "3TemplatingAndBinding\3TemplatingAndBinding.csproj", "{C9712900-CCB7-48F4-9563-304B9EC45365}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3155BF52-96EC-4FD7-9826-3C29C06DCC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3155BF52-96EC-4FD7-9826-3C29C06DCC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3155BF52-96EC-4FD7-9826-3C29C06DCC46}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3155BF52-96EC-4FD7-9826-3C29C06DCC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3155BF52-96EC-4FD7-9826-3C29C06DCC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3155BF52-96EC-4FD7-9826-3C29C06DCC46}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C1693F53-5AB2-42A9-9439-E8118BC4C97F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1693F53-5AB2-42A9-9439-E8118BC4C97F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1693F53-5AB2-42A9-9439-E8118BC4C97F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C1693F53-5AB2-42A9-9439-E8118BC4C97F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1693F53-5AB2-42A9-9439-E8118BC4C97F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1693F53-5AB2-42A9-9439-E8118BC4C97F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C9712900-CCB7-48F4-9563-304B9EC45365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9712900-CCB7-48F4-9563-304B9EC45365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9712900-CCB7-48F4-9563-304B9EC45365}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C9712900-CCB7-48F4-9563-304B9EC45365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9712900-CCB7-48F4-9563-304B9EC45365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9712900-CCB7-48F4-9563-304B9EC45365}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
