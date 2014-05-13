@@ -20,6 +20,7 @@ namespace TemplatingAndBinding
         {
             InitializeComponent();
             //TODO need datacontext
+            this.DataContext = new ViewModel();
         }
     }
 }
