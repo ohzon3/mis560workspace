@@ -31,5 +31,14 @@ namespace TemplatingAndBinding
 
         private int _NumberOfClicks = 0;
 
+        public int NumberOfClicks
+        {
+            get { return _NumberOfClicks; }
+            set
+            {
+                _NumberOfClicks = value;
+                NotifyPropertyChanged("NumberOfClicks");
+            }
+        }
     }
 }
