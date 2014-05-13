@@ -12,7 +12,7 @@ using System.Windows.Shapes;
 namespace ListBindingAndComplexBinding
 {
     //I got this from http://code.msdn.microsoft.com/wpapps/Simple-MVVM-and-Windows-134e460f
-    //I generaly google for a simple command
+    //I generaly google for "wpf simple command"
     public class DelegateCommand : ICommand
     {
         /// <summary>

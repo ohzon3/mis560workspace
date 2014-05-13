@@ -51,41 +51,45 @@ namespace ListBindingAndComplexBinding
             {
                 _SelectedItem = value;
                 NotifyPropertyChanged("SelectedItem");
+                
             }
         }
        
         //TODO add a property for when we select an item from my list to update the textbox
 
-        private string _TextboxString;
+        //private string _TextboxString;
 
-        public string TextboxString
-        {
-            get { return _TextboxString; }
-            set
-            {
-                _TextboxString = value;
-                NotifyPropertyChanged("TexboxString");
-            }
-        }
+        //public string TextboxString
+        //{
+        //    get { return _TextboxString; }
+        //    set
+        //    {
+        //        _TextboxString = value;
+        //        NotifyPropertyChanged("TexboxString");
+        //    }
+        //}
 
         #region Command logic
         public ICommand ButtonCommand
         {
             get
             {
-                return new DelegateCommand(SetToList, CanSetToList);
+                return new DelegateCommand(SetToList, CanSetToList); 
+                //must pass these two things, can name them anything
+                //
             }
 
         }
 
         private void SetToList(object obj)
         {
-            MyList.Add(TextboxString);
+            MyList.Add(SelectedItem);
             
         }
 
         private bool CanSetToList(object obj)
         {
+            //always set to true for now
             return true;
         }
 
