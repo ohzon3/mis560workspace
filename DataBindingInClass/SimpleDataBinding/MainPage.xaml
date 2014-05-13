@@ -34,7 +34,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBox Grid.Row="0" Text="{Binding MyString}" />
+            <TextBox Grid.Row="0" Text="{Binding MyString,Mode=TwoWay}" />
             <TextBlock Grid.Row="1" Text="{Binding MyString}" VerticalAlignment="Center" />
             <TextBox Grid.Row="2" Name="TextBox2" />
             <TextBlock Grid.Row="3" Text="{Binding Text, ElementName=TextBox2}" VerticalAlignment="Center" />

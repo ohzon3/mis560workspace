@@ -41,6 +41,18 @@ namespace ListBindingAndComplexBinding
         }
 
         public ObservableCollection<string> MyList {get;set;}
+
+        private string _SelectedItem;
+
+        public string SelectedItem
+        {
+            get { return _SelectedItem; }
+            set
+            {
+                _SelectedItem = value;
+                NotifyPropertyChanged("SelectedItem");
+            }
+        }
        
         //TODO add a property for when we select an item from my list to update the textbox
 
