@@ -32,12 +32,12 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <ListBox Grid.Row="0" ItemsSource="{Binding }" >
+            <ListBox Grid.Row="0" ItemsSource="{Binding MyList}" >
                 <ListBox.ItemTemplate>
                     <DataTemplate> 
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding }" />
-                            <Button Content="Click To Add 1" Command="{Binding }" />
+                            <TextBlock Text="{Binding NumberOfClicks}" />
+                            <Button Content="Click To Add 1" />
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
