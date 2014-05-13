@@ -9,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.ComponentModel;    //Needed for Notify property change
+using System.Collections.ObjectModel;
 
 
 namespace TemplatingAndBinding
@@ -33,7 +34,16 @@ namespace TemplatingAndBinding
         }
         #endregion
 
+        ObservableCollection<MyClass> MyList = new ObservableCollection<MyClass>();
 
+        public ViewModel()
+        {
+            MyList.Add(new MyClass());
+            MyList.Add(new MyClass());
+            MyList.Add(new MyClass());
+            MyList.Add(new MyClass());
+            MyList.Add(new MyClass());
+        }
 
     }
 }
