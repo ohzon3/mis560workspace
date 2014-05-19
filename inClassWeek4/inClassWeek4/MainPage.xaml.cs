@@ -11,7 +11,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 
-namespace PhoneApp1
+namespace inClassWeek4
 {
     public partial class MainPage : PhoneApplicationPage
     {
