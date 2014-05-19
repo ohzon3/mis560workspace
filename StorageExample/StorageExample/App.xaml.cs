@@ -13,10 +13,12 @@ using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
-namespace assignment2
+namespace StorageExample
 {
     public partial class App : Application
     {
+        public string name;
+
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
         /// </summary>

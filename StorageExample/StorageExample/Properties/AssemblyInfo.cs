@@ -6,12 +6,12 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("assignment2")]
+[assembly: AssemblyTitle("StorageExample")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("assignment2")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCompany("Toshiba")]
+[assembly: AssemblyProduct("StorageExample")]
+[assembly: AssemblyCopyright("Copyright © Toshiba 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -21,7 +21,7 @@ using System.Resources;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("15cf4a15-a712-491a-b653-861b2d81d29f")]
+[assembly: Guid("8a92e601-086f-4cf8-92f9-b87342badf77")]
 
 // Version information for an assembly consists of the following four values:
 //
