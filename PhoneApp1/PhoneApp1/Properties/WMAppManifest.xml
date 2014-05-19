@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{edb072b5-afe9-4a85-a1c5-0a41bf042d19}" Title="inClassWeek4" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="inClassWeek4 author" Description="Sample description" Publisher="inClassWeek4">
+  <App xmlns="" ProductID="{a227ed0f-a1b1-4db2-9f84-f3627445e185}" Title="PhoneApp1" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="PhoneApp1 author" Description="Sample description" Publisher="PhoneApp1">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES"/>
@@ -23,11 +23,11 @@
       <DefaultTask  Name ="_default" NavigationPage="MainPage.xaml"/>
     </Tasks>
     <Tokens>
-      <PrimaryToken TokenID="inClassWeek4Token" TaskName="_default">
+      <PrimaryToken TokenID="PhoneApp1Token" TaskName="_default">
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>inClassWeek4</Title>
+          <Title>PhoneApp1</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>
