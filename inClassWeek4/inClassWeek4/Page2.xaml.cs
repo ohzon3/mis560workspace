@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using System.IO.IsolatedStorage;
 
 namespace inClassWeek4
 {
@@ -18,6 +19,15 @@ namespace inClassWeek4
         public Page1()
         {
             InitializeComponent();
+
+        }
+
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            outputTextblock.Text = IsolatedStorageSettings.ApplicationSettings[];
+            
         }
     }
 }

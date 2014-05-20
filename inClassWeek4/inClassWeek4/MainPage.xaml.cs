@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using System.IO.IsolatedStorage;
 
 namespace inClassWeek4
 {
@@ -20,5 +21,13 @@ namespace inClassWeek4
         {
             InitializeComponent();
         }
+
+        private void submitButton_Click(object sender, RoutedEventArgs e)
+        {
+            IsolatedStorageSettings.ApplicationSettings["userName"] = nameTextbox.Text;
+            NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.Relative));
+        }
+
+
     }
 }
