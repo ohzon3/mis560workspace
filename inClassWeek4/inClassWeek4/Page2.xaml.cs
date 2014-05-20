@@ -26,7 +26,7 @@ namespace inClassWeek4
         {
             base.OnNavigatedTo(e);
 
-            outputTextblock.Text = IsolatedStorageSettings.ApplicationSettings[];
+            outputTextblock.Text = (String)IsolatedStorageSettings.ApplicationSettings["userName"];
             
         }
     }
