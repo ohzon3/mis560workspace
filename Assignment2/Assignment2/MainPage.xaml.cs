@@ -19,6 +19,7 @@ namespace Assignment2
         public MainPage()
         {
             InitializeComponent();
+            this.DataContext = new ViewModel();
         }
     }
 }
