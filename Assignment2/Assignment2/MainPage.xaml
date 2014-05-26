@@ -11,8 +11,10 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True" >
 
+    <!--Loaded="PhoneApplicationPage_Loaded"-->
+    
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
@@ -41,7 +43,7 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar.addnote.png" Text="Add Note"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar.addnote.png" Text="Add Note" x:Name="newNote" Click="newNote_Click" />
 </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 

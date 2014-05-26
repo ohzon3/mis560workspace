@@ -19,5 +19,17 @@ namespace Assignment2
         {
             InitializeComponent();
         }
+
+        private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
+        {
+            //save textbox text here
+            base.OnBackKeyPress(e);
+        }
+
     }
 }

@@ -21,5 +21,10 @@ namespace Assignment2
             InitializeComponent();
             this.DataContext = new ViewModel();
         }
+
+        private void newNote_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/EditNotes.xaml", UriKind.Relative));
+        }
     }
 }
