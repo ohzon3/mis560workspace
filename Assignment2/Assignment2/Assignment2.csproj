@@ -85,6 +85,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\appbar.addnote.png" />
+    <Content Include="Images\appbar.deletenote.png" />
     <Content Include="ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

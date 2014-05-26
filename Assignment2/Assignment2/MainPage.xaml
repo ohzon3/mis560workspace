@@ -6,7 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -19,46 +19,30 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="Note Pad" Style="{StaticResource PhoneTextNormalStyle}" FontSize="28"/>
-        </StackPanel>
-
+        <TextBlock x:Name="ApplicationTitle" Grid.Row="0" Text="Note Pad" Style="{StaticResource PhoneTextTitle2Style}" />
+        
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*"/>
+                <!--<RowDefinition Height="Auto"/>-->
+                
             </Grid.RowDefinitions>
-            
             <ListBox Grid.Row="0" ItemsSource="{Binding MyList}" SelectedValue="{Binding SelectedItem, Mode=TwoWay}" />
-            <Button Grid.Row="1" Content="Click ME!" Click="Button_Click" />
-            <TextBox Grid.Row="2" Text="{Binding SelectedItem,Mode=TwoWay}" />
-            
-            <!--<TextBlock Text="MyList" />
-                <TextBlock Text="MyList" />
-                <Button Content="button" />
+            <!--<TextBox Grid.Row="1" Text="{Binding SelectedItem,Mode=TwoWay}" />
                 <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding MyList}" SelectedValue="{Binding SelectedItem, Mode=TwoWay}"/>
-                    </DataTemplate> 
-                </ListBox.ItemTemplate>-->
-       
+                
+                </ListBox.ItemTemplate>
+            
+            
+            <Button Grid.Row="1" Content="Click Me to add to List" Command="{Binding ButtonCommand}"/>-->
         </Grid>
     </Grid>
- 
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar.addnote.png" Text="Add Note"/>
+</shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>

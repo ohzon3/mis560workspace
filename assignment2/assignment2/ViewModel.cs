@@ -17,7 +17,7 @@ using System.Collections.ObjectModel; //for observable collection
 
 namespace Assignment2
 {
-    class ViewModel : INotifyPropertyChanged
+    public class ViewModel : INotifyPropertyChanged
     {
         #region Notify Property logic
         public event PropertyChangedEventHandler PropertyChanged;
@@ -33,11 +33,14 @@ namespace Assignment2
         }
         #endregion
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public ViewModel()
         {
             MyList = new ObservableCollection<string>();
-            MyList.Add("Temp");
-            MyList.Add("Temp2");
+            MyList.Add("Note #1");
+            MyList.Add("Note #2");
         }
 
         public ObservableCollection<string> MyList { get; set; }

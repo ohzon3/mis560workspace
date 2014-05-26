@@ -13,13 +13,11 @@ using Microsoft.Phone.Controls;
 
 namespace Assignment2
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class EditNotes : PhoneApplicationPage
     {
-        // Constructor
-        public MainPage()
+        public EditNotes()
         {
             InitializeComponent();
-            this.DataContext = new ViewModel();
         }
     }
 }
