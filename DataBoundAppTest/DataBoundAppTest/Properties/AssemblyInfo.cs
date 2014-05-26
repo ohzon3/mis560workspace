@@ -6,11 +6,11 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DataBoundApp1")]
+[assembly: AssemblyTitle("DataBoundAppTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DataBoundApp1")]
+[assembly: AssemblyProduct("DataBoundAppTest")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -21,7 +21,7 @@ using System.Resources;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4d13f872-308b-4f23-9154-26681f2f0436")]
+[assembly: Guid("279a5911-a286-48dc-93a5-ae27e8789b3e")]
 
 // Version information for an assembly consists of the following four values:
 //

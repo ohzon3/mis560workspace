@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{374717EE-67B8-4209-B5A1-B802035213CB}</ProjectGuid>
+    <ProjectGuid>{75FF3087-E8A3-4EC6-A739-0901D8FFF6F7}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataBoundApp1</RootNamespace>
-    <AssemblyName>DataBoundApp1</AssemblyName>
+    <RootNamespace>DataBoundAppTest</RootNamespace>
+    <AssemblyName>DataBoundAppTest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
@@ -20,9 +20,9 @@
     </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>DataBoundApp1.xap</XapFilename>
+    <XapFilename>DataBoundAppTest.xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
-    <SilverlightAppEntry>DataBoundApp1.App</SilverlightAppEntry>
+    <SilverlightAppEntry>DataBoundAppTest.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
   </PropertyGroup>

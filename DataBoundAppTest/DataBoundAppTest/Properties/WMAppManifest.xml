@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{858b74cc-819d-44cb-b09d-c394ec9b065f}" Title="DataBoundApp1" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="DataBoundApp1 author" Description="Sample description" Publisher="DataBoundApp1">
+  <App xmlns="" ProductID="{aa80e44c-9a76-4c89-8748-f4ca53dbfc0d}" Title="DataBoundAppTest" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="DataBoundAppTest author" Description="Sample description" Publisher="DataBoundAppTest">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES"/>
@@ -23,11 +23,11 @@
       <DefaultTask  Name ="_default" NavigationPage="MainPage.xaml"/>
     </Tasks>
     <Tokens>
-      <PrimaryToken TokenID="DataBoundApp1Token" TaskName="_default">
+      <PrimaryToken TokenID="DataBoundAppTestToken" TaskName="_default">
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>DataBoundApp1</Title>
+          <Title>DataBoundAppTest</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>

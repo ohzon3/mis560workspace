@@ -21,5 +21,10 @@ namespace Assignment2
             InitializeComponent();
             this.DataContext = new ViewModel();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

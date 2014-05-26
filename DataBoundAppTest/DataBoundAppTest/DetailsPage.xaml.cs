@@ -12,7 +12,7 @@ using System.Windows.Shapes;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 
-namespace DataBoundApp1
+namespace DataBoundAppTest
 {
     public partial class DetailsPage : PhoneApplicationPage
     {

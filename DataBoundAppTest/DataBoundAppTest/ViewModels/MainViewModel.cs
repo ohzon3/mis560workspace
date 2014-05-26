@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 
 
-namespace DataBoundApp1
+namespace DataBoundAppTest
 {
     public class MainViewModel : INotifyPropertyChanged
     {

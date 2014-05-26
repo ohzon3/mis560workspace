@@ -27,21 +27,25 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <ListBox Grid.Row="0" ItemsSource="{Binding MyList}">
-                                
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            
+            <ListBox Grid.Row="0" ItemsSource="{Binding MyList}" SelectedValue="{Binding SelectedItem, Mode=TwoWay}" />
+            <Button Grid.Row="1" Content="Click ME!" Click="Button_Click" />
+            <TextBox Grid.Row="2" Text="{Binding SelectedItem,Mode=TwoWay}" />
+            
+            <!--<TextBlock Text="MyList" />
+                <TextBlock Text="MyList" />
+                <Button Content="button" />
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <!--<TextBlock Text="{Binding MyList}" SelectedValue="{Binding SelectedItem, Mode=TwoWay}"/>-->
-                        <TextBlock Text="{Binding MyList}" />
-                        
-                    
-                    </DataTemplate>  
-                </ListBox.ItemTemplate>
-            </ListBox>
-            
-            <Button Grid.Row="1" Content="Click ME!">
-                
-            </Button>
+                        <TextBlock Text="{Binding MyList}" SelectedValue="{Binding SelectedItem, Mode=TwoWay}"/>
+                    </DataTemplate> 
+                </ListBox.ItemTemplate>-->
+       
         </Grid>
     </Grid>
  

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using System;
 using System.Net;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,7 +17,7 @@ using System.Collections.ObjectModel; //for observable collection
 
 namespace Assignment2
 {
-    class ViewModel 
+    class ViewModel : INotifyPropertyChanged
     {
         #region Notify Property logic
         public event PropertyChangedEventHandler PropertyChanged;
@@ -55,6 +54,32 @@ namespace Assignment2
 
             }
         }
+
+        #region Command logic
+        public ICommand ButtonCommand
+        {
+            get
+            {
+                return new DelegateCommand(SetToList, CanSetToList);
+                //must pass these two things, can name them anything
+                //
+            }
+
+        }
+
+        private void SetToList(object obj)
+        {
+            MyList.Add(SelectedItem);
+
+        }
+
+        private bool CanSetToList(object obj)
+        {
+            //always set to true for now
+            return true;
+        }
+
+        #endregion
 
     }
 }

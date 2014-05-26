@@ -13,7 +13,7 @@ using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
-namespace DataBoundApp1
+namespace DataBoundAppTest
 {
     public partial class App : Application
     {
