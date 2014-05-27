@@ -30,6 +30,8 @@ namespace Assignment2
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //GO to the EditNotes page and show the selected item
+            //TODO 
             NavigationService.Navigate(new Uri("/EditNotes.xaml", UriKind.Relative));
         }
     }

@@ -31,13 +31,16 @@
                 
             </Grid.RowDefinitions>
             <ListBox Grid.Row="0" ItemsSource="{Binding MyList}" SelectionChanged="ListBox_SelectionChanged" />
+            
+            <!-- TODO SelectionChanged add action to go to the EditNotes and display string -->
+            
+            
             <!--<TextBox Grid.Row="1" Text="{Binding SelectedItem,Mode=TwoWay}" />
                 <ListBox.ItemTemplate>
                 
                 </ListBox.ItemTemplate>
-            
-            
             <Button Grid.Row="1" Content="Click Me to add to List" Command="{Binding ButtonCommand}"/>-->
+            
         </Grid>
     </Grid>
 

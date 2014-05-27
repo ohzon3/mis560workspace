@@ -23,7 +23,7 @@ namespace Assignment2
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            //TODO Do I need someething here?
         }
 
         protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
@@ -35,6 +35,7 @@ namespace Assignment2
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
+            //TODO load the data that was selected
             base.OnNavigatedTo(e);
             
         }
