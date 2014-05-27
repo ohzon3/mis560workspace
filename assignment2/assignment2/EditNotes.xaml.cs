@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using System.IO.IsolatedStorage;
 
 namespace Assignment2
 {
@@ -22,13 +23,20 @@ namespace Assignment2
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
         {
-            //save textbox text here
+            //TODO save textbox text here
+            
             base.OnBackKeyPress(e);
+        }
+
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            
         }
 
     }

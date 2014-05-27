@@ -30,7 +30,7 @@
                 <!--<RowDefinition Height="Auto"/>-->
                 
             </Grid.RowDefinitions>
-            <ListBox Grid.Row="0" ItemsSource="{Binding MyList}" SelectedValue="{Binding SelectedItem, Mode=TwoWay}" />
+            <ListBox Grid.Row="0" ItemsSource="{Binding MyList}" SelectionChanged="ListBox_SelectionChanged" />
             <!--<TextBox Grid.Row="1" Text="{Binding SelectedItem,Mode=TwoWay}" />
                 <ListBox.ItemTemplate>
                 

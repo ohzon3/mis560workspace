@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using System.IO.IsolatedStorage;
 
 namespace Assignment2
 {
@@ -23,6 +24,11 @@ namespace Assignment2
         }
 
         private void newNote_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/EditNotes.xaml", UriKind.Relative));
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/EditNotes.xaml", UriKind.Relative));
         }
