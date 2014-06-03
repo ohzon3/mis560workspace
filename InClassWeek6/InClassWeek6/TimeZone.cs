@@ -13,10 +13,10 @@ namespace InClassWeek6
 {
     public class TimeZone
     {
-        "dstOffset"
-        "rawOffset"
-        "status"
-        "timeZoneId"
-        "timeZoneName"
+        public double dstOffset {get; set;}
+        public double rawOffset {get; set;}
+        public string status {get; set;}
+        public string timeZoneId {get; set;}
+        public string timeZoneName {get; set;}
     }
 }
