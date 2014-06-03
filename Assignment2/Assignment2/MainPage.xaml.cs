@@ -32,6 +32,11 @@ namespace Assignment2
         {
             //GO to the EditNotes page and show the selected item
             //TODO 
+            
+        }
+
+        private void ListBox_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
             NavigationService.Navigate(new Uri("/EditNotes.xaml", UriKind.Relative));
         }
     }

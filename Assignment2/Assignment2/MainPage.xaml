@@ -30,7 +30,7 @@
                 <!--<RowDefinition Height="Auto"/>-->
                 
             </Grid.RowDefinitions>
-            <ListBox Grid.Row="0" ItemsSource="{Binding MyList}" SelectionChanged="ListBox_SelectionChanged" />
+            <ListBox Grid.Row="0" ItemsSource="{Binding MyList}" SelectedItem="ListBox_SelectionChanged" Tap="ListBox_Tap" MouseLeftButtonDown="ListBox_MouseLeftButtonDown" />
             
             <!-- TODO SelectionChanged add action to go to the EditNotes and display string -->
             
