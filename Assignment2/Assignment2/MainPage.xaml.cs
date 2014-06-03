@@ -39,5 +39,10 @@ namespace Assignment2
         {
             NavigationService.Navigate(new Uri("/EditNotes.xaml", UriKind.Relative));
         }
+
+        private void ListBox_Tap(object sender, GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/EditNotes.xaml", UriKind.Relative));
+        }
     }
 }

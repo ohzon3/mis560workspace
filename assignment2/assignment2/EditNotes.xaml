@@ -18,16 +18,17 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <TextBlock x:Name="ApplicationTitle" Grid.Row="0" Text="Note Pad" Style="{StaticResource PhoneTextTitle2Style}" />
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBox Name="textOfNote" />
-                
-            
-            
+            <TextBox Name="textOfNote" Text="{Binding SelectItem, Mode=TwoWay}"/>
         </Grid>
+        
+        <Button Name="saveButton" Command="{Binding ButtonCommand}" Content="Save the Note" Grid.Row="3"/>
+
     </Grid>
  
     <phone:PhoneApplicationPage.ApplicationBar>

@@ -29,7 +29,8 @@ namespace Assignment2
         protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
         {
             //TODO save textbox text here
-            MyList.add(textOfNote.Text);
+            
+            
             base.OnBackKeyPress(e);
         }
 
@@ -37,7 +38,8 @@ namespace Assignment2
         {
             //TODO load the data that was selected
             base.OnNavigatedTo(e);
-            
+
+            textOfNote.Text = "Test";
         }
 
     }
