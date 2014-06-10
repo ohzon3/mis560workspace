@@ -35,6 +35,13 @@ namespace multitasking
 
             //// Add it to the service to execute ScheduledActionService.Add(task); 
 
+            // Determine the source and destination 
+            var serverUri = new Uri("http://shawntwain.com/01-Anne.mp3");
+            var isoStoreUri = new Uri("/shared/transfers/01-Anne.mp3",
+            UriKind.Relative);
+            //Create the request
+            var request = new BackgroundTransferRequest(isoStoreUri, serverUri); 
+
 
         }
     }
