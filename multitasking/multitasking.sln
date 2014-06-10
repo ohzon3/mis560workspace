@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010 Express for Windows Phone
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multitasking", "multitasking\multitasking.csproj", "{307D70DE-0DE2-45E9-9FF7-DE500F5DC630}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundAgent", "BackgroundAgent\BackgroundAgent.csproj", "{BCFEC426-696C-4BB7-9E3D-E9D7D17BCA91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{307D70DE-0DE2-45E9-9FF7-DE500F5DC630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{307D70DE-0DE2-45E9-9FF7-DE500F5DC630}.Release|Any CPU.Build.0 = Release|Any CPU
 		{307D70DE-0DE2-45E9-9FF7-DE500F5DC630}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BCFEC426-696C-4BB7-9E3D-E9D7D17BCA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFEC426-696C-4BB7-9E3D-E9D7D17BCA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFEC426-696C-4BB7-9E3D-E9D7D17BCA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFEC426-696C-4BB7-9E3D-E9D7D17BCA91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
