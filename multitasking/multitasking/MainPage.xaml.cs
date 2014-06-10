@@ -23,17 +23,17 @@ namespace multitasking
         {
             InitializeComponent();
 
-            // A unique name for your task. It is used to 
-            // locate it in from the service. 
-            var taskName = "MyTask";
+            //// A unique name for your task. It is used to 
+            //// locate it in from the service. 
+            //var taskName = "MyTask";
 
-            // Create the Task 
-            PeriodicTask task = new PeriodicTask(taskName);
+            //// Create the Task 
+            //PeriodicTask task = new PeriodicTask(taskName);
 
-            // Description is required 
-            task.Description = "This saves some data to Isolated Storage";
+            //// Description is required 
+            //task.Description = "This saves some data to Isolated Storage";
 
-            // Add it to the service to execute ScheduledActionService.Add(task); 
+            //// Add it to the service to execute ScheduledActionService.Add(task); 
 
 
         }
