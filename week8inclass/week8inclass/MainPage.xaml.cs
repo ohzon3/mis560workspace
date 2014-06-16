@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using Microsoft.Devices;
+
 
 namespace week8inclass
 {
@@ -19,6 +21,11 @@ namespace week8inclass
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void vibrate_Click(object sender, RoutedEventArgs e)
+        {
+            VibrateController.Default.Start(TimeSpan.FromMilliseconds(10));
         }
     }
 }
