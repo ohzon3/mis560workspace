@@ -45,6 +45,10 @@
             <TextBlock Name="yValue" Text="yValue" Grid.Row="4" FontSize="32" />
             <TextBlock Name="zValue" Text="zValue" Grid.Row="5" FontSize="32" />
             
+            <MediaElement Name="soundElement" Source="/audio/chord.wav" AutoPlay="True" />
+            
+
+
         </Grid>
     </Grid>
  

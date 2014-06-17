@@ -27,13 +27,15 @@ namespace week8inclass
             _theAccelerometer.TimeBetweenUpdates = TimeSpan.FromMilliseconds(50);
 
         }
-
+        Accelerometer _theAccelerometer = new Accelerometer();
+        
         private void vibrate_Click(object sender, RoutedEventArgs e)
         {
             VibrateController.Default.Start(TimeSpan.FromMilliseconds(10));
+            soundElement.Play();
         }
 
-        Accelerometer _theAccelerometer = new Accelerometer();
+        
 
 
 
