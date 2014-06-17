@@ -28,7 +28,22 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button Name="vibrate" Content="Vibrate" Click="vibrate_Click" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+
+            <Button Name="vibrate" Content="Vibrate" Grid.Row="0" Click="vibrate_Click" />
+            <Button Name="accelStart" Content="Accel Start" Grid.Row="1" Click="accelStart_Click" />
+            <Button Name="accelStop" Content="Accel Stop" Grid.Row="2" Click="accelStop_Click" />
+            <TextBlock Name="xValue" Text="xValue" Grid.Row="3" FontSize="32" />
+            <TextBlock Name="yValue" Text="yValue" Grid.Row="4" FontSize="32" />
+            <TextBlock Name="zValue" Text="zValue" Grid.Row="5" FontSize="32" />
             
         </Grid>
     </Grid>
