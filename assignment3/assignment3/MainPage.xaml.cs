@@ -20,5 +20,10 @@ namespace assignment3
         {
             InitializeComponent();
         }
+
+        private void newNote_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/EditNotes.xaml", UriKind.Relative));
+        }
     }
 }
