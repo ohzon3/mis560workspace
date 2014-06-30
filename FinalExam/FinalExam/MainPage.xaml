@@ -22,7 +22,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="Score Counter" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="Score Counter" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -33,9 +33,9 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Button Name="buttonTeamA" Content="Team A" Grid.Row="0" />
-            <Button Name="buttonTeamB" Content="Team B" Grid.Row="1" />
-            <Button Name="buttonViewCount" Content="View Count" Grid.Row="2" />
+            <Button Name="buttonTeamA" Content="Team A" Grid.Row="0" Click="buttonTeamA_Click" />
+            <Button Name="buttonTeamB" Content="Team B" Grid.Row="1" Click="buttonTeamB_Click" />
+            <Button Name="buttonViewCount" Content="View Count" Grid.Row="2" Click="buttonViewCount_Click" />
             
         </Grid>
     </Grid>

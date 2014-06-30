@@ -20,5 +20,20 @@ namespace FinalExam
         {
             InitializeComponent();
         }
+
+        private void buttonViewCount_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/ViewCount.xaml", UriKind.Relative));
+        }
+
+        private void buttonTeamA_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonTeamB_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
