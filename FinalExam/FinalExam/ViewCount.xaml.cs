@@ -22,6 +22,7 @@ namespace FinalExam
         public ViewCount()
         {
             InitializeComponent();
+
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
@@ -38,13 +39,14 @@ namespace FinalExam
         {
             //Todo - Call resetScore() from Mainpage.xaml.cs
 
-
+            var instance = new MainPage();
+            instance.resetScore();
 
             
             IsolatedStorageSettings.ApplicationSettings["teamACounter"] = "0";
             IsolatedStorageSettings.ApplicationSettings["teamBCounter"] = "0";
             //This does not reset the score integer. Just the string, so when I clear the score and try to 
-            //start counting again, it will start with what the score was before clearing.
+            //start counting again, it will start with what the score was before clearing and continue counting from there.
             
         }
     }
