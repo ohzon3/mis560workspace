@@ -16,6 +16,9 @@ namespace FinalExam
 {
     public partial class ViewCount : PhoneApplicationPage
     {
+        string teamADisplay;
+        string teamBDisplay;
+        
         public ViewCount()
         {
             InitializeComponent();
@@ -25,7 +28,18 @@ namespace FinalExam
         {
             base.OnNavigatedTo(e);
 
-            countDisplay.Text = (String)IsolatedStorageSettings.ApplicationSettings["teamACounter"];
+            teamADisplay = (String)IsolatedStorageSettings.ApplicationSettings["teamACounter"];
+            teamBDisplay = (String)IsolatedStorageSettings.ApplicationSettings["teamBCounter"];
+
+            countDisplay.Text = "Team A: " + teamADisplay + " vs Team B: " + teamBDisplay;
+        }
+
+        private void buttonClear_Click(object sender, RoutedEventArgs e)
+        {
+            IsolatedStorageSettings.ApplicationSettings["teamACounter"] = "0";
+            IsolatedStorageSettings.ApplicationSettings["teamBCounter"] = "0";
+
+            
         }
     }
 }

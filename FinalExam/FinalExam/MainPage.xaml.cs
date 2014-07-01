@@ -20,10 +20,13 @@ namespace FinalExam
         int teamAScore = 0;
         int teamBScore = 0;
         
+        
         // Constructor
         public MainPage()
         {
             InitializeComponent();
+            IsolatedStorageSettings.ApplicationSettings["teamACounter"] = teamAScore.ToString();
+            IsolatedStorageSettings.ApplicationSettings["teamBCounter"] = teamBScore.ToString();
         }
 
         private void buttonViewCount_Click(object sender, RoutedEventArgs e)
@@ -39,7 +42,8 @@ namespace FinalExam
 
         private void buttonTeamB_Click(object sender, RoutedEventArgs e)
         {
-
+            teamBScore++;
+            IsolatedStorageSettings.ApplicationSettings["teamBCounter"] = teamBScore.ToString();
         }
     }
 }

@@ -34,7 +34,7 @@
             </Grid.RowDefinitions>
             
             <TextBlock Name="countDisplay" Text="Filler Text" Grid.Row="0" />
-            <Button Name="buttonClear" Content="Clear!" Grid.Row="1" />
+            <Button Name="buttonClear" Content="Clear!" Grid.Row="1" Click="buttonClear_Click" />
             
         </Grid>
     </Grid>
