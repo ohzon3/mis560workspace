@@ -45,5 +45,11 @@ namespace FinalExam
             teamBScore++;
             IsolatedStorageSettings.ApplicationSettings["teamBCounter"] = teamBScore.ToString();
         }
+
+        public void resetScore()
+        {
+            teamAScore = 0;
+            teamBScore = 0;
+        }
     }
 }
