@@ -37,15 +37,14 @@ namespace FinalExam
         private void buttonClear_Click(object sender, RoutedEventArgs e)
         {
             //Todo - Call resetScore() from Mainpage.xaml.cs
-            
 
 
+
             
-            //IsolatedStorageSettings.ApplicationSettings["teamACounter"] = "0";
-            //IsolatedStorageSettings.ApplicationSettings["teamBCounter"] = "0";
-            
+            IsolatedStorageSettings.ApplicationSettings["teamACounter"] = "0";
+            IsolatedStorageSettings.ApplicationSettings["teamBCounter"] = "0";
             //This does not reset the score integer. Just the string, so when I clear the score and try to 
-            //start counting again, it will start with what the score was before.
+            //start counting again, it will start with what the score was before clearing.
             
         }
     }
