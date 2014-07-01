@@ -10,11 +10,16 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using System.IO.IsolatedStorage;
 
 namespace FinalExam
 {
     public partial class MainPage : PhoneApplicationPage
     {
+
+        int teamAScore = 0;
+        int teamBScore = 0;
+        
         // Constructor
         public MainPage()
         {
@@ -28,7 +33,8 @@ namespace FinalExam
 
         private void buttonTeamA_Click(object sender, RoutedEventArgs e)
         {
-
+            teamAScore++;
+            IsolatedStorageSettings.ApplicationSettings["teamACounter"] = teamAScore.ToString();
         }
 
         private void buttonTeamB_Click(object sender, RoutedEventArgs e)

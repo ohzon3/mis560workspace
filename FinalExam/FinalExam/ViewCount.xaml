@@ -33,7 +33,7 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             
-            <TextBlock Name="msgDisplay" Text="Filler Text" Grid.Row="0" />
+            <TextBlock Name="countDisplay" Text="Filler Text" Grid.Row="0" />
             <Button Name="buttonClear" Content="Clear!" Grid.Row="1" />
             
         </Grid>
